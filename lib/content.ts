@@ -63,7 +63,7 @@ export const doctorInfo = {
   "Appendix and Appendix-related Surgery",
   "Emergency Gastrointestinal Surgery",
   "Treatment of Benign and Malignant GI Diseases",
-  "Pancrease Cancer Surgery (Whippel Procedure)",
+  "Pancrease Cancer Surgery (Whipple Procedure)",
 ]
 
 
