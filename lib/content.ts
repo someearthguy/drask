@@ -7,7 +7,7 @@ export const doctorInfo = {
   tagline:
     "Laparoscopic, Robotic GI Oncosurgery & Minimally Invasive Surgery",
   bio:
-    "Dr. Anoop Singh Khod is a skilled Surgical Gastroenterologist in Hisar, Haryana, specializing in laparoscopic and robotic gastrointestinal surgery, GI oncosurgery, and advanced minimally invasive procedures. With extensive experience in treating complex conditions of the stomach, intestines, liver, gallbladder, pancreas, and colorectal system, he is committed to providing safe, precise, and patient-centered surgical care. Dr. Khod combines modern surgical technology with evidence-based practices to ensure faster recovery, minimal discomfort, and optimal outcomes for his patients. Actively involved in academic research, clinical training, and continuous medical education, he strives to advance the standards of gastrointestinal surgery while delivering compassionate care to patients across Hisar and surrounding regions of Haryana.",
+    "Dr. Anoop Singh Khod is a skilled Surgical Gastroenterologist in Hisar, Haryana, specializing in laparoscopic and robotic gastrointestinal surgery, GI oncosurgery, and advanced minimally invasive procedures. With extensive experience in treating complex conditions of the stomach, intestines, liver, gallbladder, pancreas, and colorectal system, he is committed to providing safe, precise, and patient-centered surgical care.\nDr. Khod combines modern surgical technology with evidence-based practices to ensure faster recovery, minimal discomfort, and optimal outcomes for his patients. Actively involved in academic research, clinical training, and continuous medical education, he strives to advance the standards of gastrointestinal surgery while delivering compassionate care to patients across Hisar and surrounding regions of Haryana.",
   profilepic:"ask-profile.jpeg",
   logo: "ask-logo.png",
   logohz: "ask-logo-hz.png",
@@ -57,12 +57,13 @@ export const doctorInfo = {
   "Advanced Minimally Invasive GI Procedures",
   "Gallbladder Surgery (Laparoscopic Cholecystectomy)",
   "Colorectal Surgery (Colon & Rectal Disorders)",
-  "Small Intestine and Bowel Surgery",
+  "Small Intestine Surgery",
   "Upper Gastrointestinal Surgery (Esophagus & Stomach)",
   "Hernia Surgery (Laparoscopic & Complex Hernias)",
   "Appendix and Appendix-related Surgery",
   "Emergency Gastrointestinal Surgery",
   "Treatment of Benign and Malignant GI Diseases",
+  "Pancrease Cancer Surgery (Whippel Procedure)",
 ]
 
 
@@ -193,8 +194,8 @@ export const artworks = [
 export const hospitalInfo = {
   name: "Shanti Devi GI Institute & Advanced Endoscopy Centre",
   address: "Hisar, Haryana, India",
-  phone: "+91 7419971007",
-  email: "admin@shantidevi.com",
+  phone: "+91 9887510709",
+  email: "dranoopis@gmail.com",
   bookingLink: "http://103.253.172.21:9090/aarogyaPatient/",
   website: "https://shantidevigiinstitute.com/",
   mapEmbedUrl:
@@ -212,7 +213,7 @@ export const stats = [
     sublabel: "In Surgical Gastroenterology",
   },
   {
-    value: "300+",
+    value: "1100+",
     label: "Surgeries Performed",
     sublabel: "GI & minimally invasive procedures",
   },

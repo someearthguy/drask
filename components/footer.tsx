@@ -106,7 +106,7 @@ export function Footer() {
           <p className="font-mono text-xs text-foreground/60 md:text-sm">
             Made with ❤️ by{" "}
             <a
-              href="https://github.com/SomeEarthDev"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-foreground/80 transition-colors hover:text-foreground"
