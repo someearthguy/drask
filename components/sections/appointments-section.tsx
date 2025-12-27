@@ -11,7 +11,7 @@ export function AppointmentsSection() {
   return (
     <section
       ref={ref}
-      className="flex min-h-screen w-screen shrink-0 snap-start items-center px-4 py-20 md:h-screen md:px-12 md:py-0 lg:px-16"
+      className="flex min-h-screen w-full items-center px-4 py-16 md:px-12 md:py-20 lg:px-16"
     >
       <div className="mx-auto w-full max-w-7xl">
         <div className="overflow-visible">
