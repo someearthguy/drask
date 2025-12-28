@@ -71,10 +71,9 @@ export function Navbar({
           className="border p-0.5 border-chart-2/20 h-12 w-12 shrink-0 rounded-full"
         >
           <LogoIcon />
-        </div>{" "}
-        <span className="font-semibold tracking-tight text-2xl text-gray-900">
-          {" "}
-          Dr. Anoop Singh Khod{" "}
+        </div>
+        <span className="font-semibold tracking-tight text-2xl">
+          {" "}Dr. Anoop Singh Khod{" "}
         </span>
       </button>
 
@@ -146,7 +145,7 @@ export function Navbar({
       {/* ---------- Mobile ---------- */}
       <MagneticButton
         onClick={() => setOpen((v) => !v)}
-        variant="accent"
+        variant="primary"
         aria-label={open ? "Close menu" : "Open menu"}
         aria-expanded={open}
         className="

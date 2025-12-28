@@ -49,54 +49,51 @@ export default function Home() {
   /* ---------------- Scroll → navbar sync (FIX) ---------------- */
 
   useEffect(() => {
-  const container = scrollContainerRef.current;
-  if (!container) return;
+    const container = scrollContainerRef.current;
+    if (!container) return;
 
-  const sections = Array.from(
-    container.querySelectorAll<HTMLElement>("[data-section]")
-  );
+    const sections = Array.from(
+      container.querySelectorAll<HTMLElement>("[data-section]")
+    );
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      // Collect intersecting sections
-      const visibleSections = entries
-        .filter((e) => e.isIntersecting)
-        .map((e) => Number(e.target.dataset.section))
-        .filter((n) => !Number.isNaN(n));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        // Collect intersecting sections
+        const visibleSections = entries
+          .filter((e) => e.isIntersecting)
+          .map((e) => Number(e.target.dataset.section))
+          .filter((n) => !Number.isNaN(n));
 
-      if (!visibleSections.length) return;
+        if (!visibleSections.length) return;
 
-      // 👇 Pick the LOWEST index (earliest section)
-      const next = Math.min(...visibleSections);
+        // 👇 Pick the LOWEST index (earliest section)
+        const next = Math.min(...visibleSections);
 
-      setCurrentSection((prev) =>
-        prev === next ? prev : next
-      );
-    },
-    {
-      root: container,
-      rootMargin: "-35% 0px -55% 0px",
-      threshold: 0,
-    }
-  );
+        setCurrentSection((prev) => (prev === next ? prev : next));
+      },
+      {
+        root: container,
+        rootMargin: "-35% 0px -55% 0px",
+        threshold: 0,
+      }
+    );
 
-  sections.forEach((section) => observer.observe(section));
+    sections.forEach((section) => observer.observe(section));
 
-  // Hard guarantee for Home
-  const handleScrollTop = () => {
-    if (container.scrollTop < 8) {
-      setCurrentSection(0);
-    }
-  };
+    // Hard guarantee for Home
+    const handleScrollTop = () => {
+      if (container.scrollTop < 8) {
+        setCurrentSection(0);
+      }
+    };
 
-  container.addEventListener("scroll", handleScrollTop, { passive: true });
+    container.addEventListener("scroll", handleScrollTop, { passive: true });
 
-  return () => {
-    observer.disconnect();
-    container.removeEventListener("scroll", handleScrollTop);
-  };
-}, []);
-
+    return () => {
+      observer.disconnect();
+      container.removeEventListener("scroll", handleScrollTop);
+    };
+  }, []);
 
   /* ---------------- Scroll helper ---------------- */
 
@@ -155,8 +152,8 @@ export default function Home() {
         <Shader className="h-full w-full">
           {" "}
           <Swirl
-            colorA="#0284c7"
-            colorB="#06b6d4"
+            colorA="#075985"
+            colorB="#0e7490"
             speed={0.7}
             detail={0.9}
             blend={55 + touchStrength * 25}
@@ -168,11 +165,10 @@ export default function Home() {
             fineY={45 * 0.85}
           />{" "}
           <ChromaFlow
-            baseColor="#0891b2"
-            upColor="#06b6d4"
-            downColor="#e0f2fe"
-            leftColor="#0ea5e9"
-            rightColor="#0284c7"
+            baseColor="#075985"
+            upColor="#0e7490"
+            leftColor="#0c4a6e"
+            rightColor="#0891b2"
             intensity={0.95 + touchStrength * 0.5}
             radius={2.0}
             momentum={30 + touchStrength * 20}
@@ -225,8 +221,10 @@ export default function Home() {
         <section data-section="6" className="scroll-mt-40">
           <ContactSection />
         </section>
-
-        <Footer />
+        
+        <section>
+          <Footer />
+        </section>
       </div>
     </main>
   );

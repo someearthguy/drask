@@ -12,6 +12,11 @@ export const metadata: Metadata = {
   description:
     "Expert gastrointestinal surgeon specializing in minimally invasive procedures. 15+ years experience in advanced surgical care.",
   generator: "SomeEarthDev",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-icon.png",
+  },
 }
 
 export const viewport = {

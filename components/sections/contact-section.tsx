@@ -446,13 +446,13 @@ export function ContactSection() {
                     onFocus={handleInputFocus}
                     className={`w-full border-b bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none md:py-2 md:text-base transition-colors ${
                       patientErrors.name
-                        ? "border-amber-500/50"
+                        ? "border-amber-300/50"
                         : "border-foreground/30 focus:border-foreground/50"
                     }`}
                     placeholder="Your name"
                   />
                   {patientErrors.name && (
-                    <p className="mt-1.5 text-xs text-amber-500/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
+                    <p className="mt-1.5 text-xs text-amber-300 animate-in fade-in slide-in-from-bottom-1 duration-200">
                       {patientErrors.name}
                     </p>
                   )}
@@ -483,13 +483,13 @@ export function ContactSection() {
                     maxLength={10}
                     className={`w-full border-b bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none md:py-2 md:text-base transition-colors ${
                       patientErrors.phone
-                        ? "border-amber-500/50"
+                        ? "border-amber-300/50"
                         : "border-foreground/30 focus:border-foreground/50"
                     }`}
                     placeholder="9876543210"
                   />
                   {patientErrors.phone && (
-                    <p className="mt-1.5 text-xs text-amber-500/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
+                    <p className="mt-1.5 text-xs text-amber-300/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
                       {patientErrors.phone}
                     </p>
                   )}
@@ -516,13 +516,13 @@ export function ContactSection() {
                     onFocus={handleInputFocus}
                     className={`w-full border-b bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none md:py-2 md:text-base transition-colors ${
                       patientErrors.email
-                        ? "border-amber-500/50"
+                        ? "border-amber-300/50"
                         : "border-foreground/30 focus:border-foreground/50"
                     }`}
                     placeholder="your@email.com"
                   />
                   {patientErrors.email && (
-                    <p className="mt-1.5 text-xs text-amber-500/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
+                    <p className="mt-1.5 text-xs text-amber-300/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
                       {patientErrors.email}
                     </p>
                   )}
@@ -549,13 +549,13 @@ export function ContactSection() {
                     onFocus={handleInputFocus}
                     className={`w-full border-b bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none md:py-2 md:text-base transition-colors ${
                       patientErrors.message
-                        ? "border-amber-500/50"
+                        ? "border-amber-300/50"
                         : "border-foreground/30 focus:border-foreground/50"
                     }`}
                     placeholder="Describe your health concern..."
                   />
                   {patientErrors.message && (
-                    <p className="mt-1.5 text-xs text-amber-500/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
+                    <p className="mt-1.5 text-xs text-amber-300/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
                       {patientErrors.message}
                     </p>
                   )}
@@ -624,13 +624,13 @@ export function ContactSection() {
                     onFocus={handleInputFocus}
                     className={`w-full border-b bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none md:py-2 md:text-base transition-colors ${
                       hospitalErrors.hospitalName
-                        ? "border-amber-500/50"
+                        ? "border-amber-300/50"
                         : "border-foreground/30 focus:border-foreground/50"
                     }`}
                     placeholder="Hospital or Institute name"
                   />
                   {hospitalErrors.hospitalName && (
-                    <p className="mt-1.5 text-xs text-amber-500/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
+                    <p className="mt-1.5 text-xs text-amber-300/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
                       {hospitalErrors.hospitalName}
                     </p>
                   )}
@@ -657,13 +657,13 @@ export function ContactSection() {
                     onFocus={handleInputFocus}
                     className={`w-full border-b bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none md:py-2 md:text-base transition-colors ${
                       hospitalErrors.contactPerson
-                        ? "border-amber-500/50"
+                        ? "border-amber-300/50"
                         : "border-foreground/30 focus:border-foreground/50"
                     }`}
                     placeholder="Your name"
                   />
                   {hospitalErrors.contactPerson && (
-                    <p className="mt-1.5 text-xs text-amber-500/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
+                    <p className="mt-1.5 text-xs text-amber-300/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
                       {hospitalErrors.contactPerson}
                     </p>
                   )}
@@ -691,13 +691,13 @@ export function ContactSection() {
                       onFocus={handleInputFocus}
                       className={`w-full border-b bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none md:py-2 md:text-base transition-colors ${
                         hospitalErrors.email
-                          ? "border-amber-500/50"
+                          ? "border-amber-300/50"
                           : "border-foreground/30 focus:border-foreground/50"
                       }`}
                       placeholder="email@hospital.com"
                     />
                     {hospitalErrors.email && (
-                      <p className="mt-1.5 text-xs text-amber-500/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
+                      <p className="mt-1.5 text-xs text-amber-300/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
                         {hospitalErrors.email}
                       </p>
                     )}
@@ -728,13 +728,13 @@ export function ContactSection() {
                       maxLength={10}
                       className={`w-full border-b bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none md:py-2 md:text-base transition-colors ${
                         hospitalErrors.phone
-                          ? "border-amber-500/50"
+                          ? "border-amber-300/50"
                           : "border-foreground/30 focus:border-foreground/50"
                       }`}
                       placeholder="9876543210"
                     />
                     {hospitalErrors.phone && (
-                      <p className="mt-1.5 text-xs text-amber-500/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
+                      <p className="mt-1.5 text-xs text-amber-300/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
                         {hospitalErrors.phone}
                       </p>
                     )}
@@ -762,13 +762,13 @@ export function ContactSection() {
                     onFocus={handleInputFocus}
                     className={`w-full border-b bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none md:py-2 md:text-base transition-colors ${
                       hospitalErrors.city
-                        ? "border-amber-500/50"
+                        ? "border-amber-300/50"
                         : "border-foreground/30 focus:border-foreground/50"
                     }`}
                     placeholder="City location"
                   />
                   {hospitalErrors.city && (
-                    <p className="mt-1.5 text-xs text-amber-500/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
+                    <p className="mt-1.5 text-xs text-amber-300/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
                       {hospitalErrors.city}
                     </p>
                   )}
@@ -795,13 +795,13 @@ export function ContactSection() {
                     onFocus={handleInputFocus}
                     className={`w-full border-b bg-transparent py-2 text-sm text-foreground placeholder:text-foreground/40 focus:outline-none md:py-2 md:text-base transition-colors ${
                       hospitalErrors.message
-                        ? "border-amber-500/50"
+                        ? "border-amber-300/50"
                         : "border-foreground/30 focus:border-foreground/50"
                     }`}
                     placeholder="Tell us about your requirements..."
                   />
                   {hospitalErrors.message && (
-                    <p className="mt-1.5 text-xs text-amber-500/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
+                    <p className="mt-1.5 text-xs text-amber-300/90 animate-in fade-in slide-in-from-bottom-1 duration-200">
                       {hospitalErrors.message}
                     </p>
                   )}
